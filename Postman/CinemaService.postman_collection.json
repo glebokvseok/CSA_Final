@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "a4aef4f5-56c9-4c37-8cd3-d05fc0ec8caf",
+		"name": "CinemaService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "22798206"
+	},
+	"item": [
+		{
+			"name": "GetMovies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://{{Host}}:{{Port}}/cinema/movies"
+			},
+			"response": []
+		},
+		{
+			"name": "GetShowTimes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://{{Host}}:{{Port}}/cinema/showtimes"
+			},
+			"response": []
+		},
+		{
+			"name": "BookTickets",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"showtime_id\": 5,\n    \"quantity\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{Host}}:{{Port}}/cinema/tickets"
+			},
+			"response": []
+		}
+	]
+}
